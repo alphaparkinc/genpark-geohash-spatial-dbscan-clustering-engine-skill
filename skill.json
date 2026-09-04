@@ -1,0 +1,39 @@
+{
+  "name": "genpark-geohash-spatial-dbscan-clustering-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Zero-dependency pure-Python spherical DBSCAN spatial clustering engine aggregating dense GPS coordinate points.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "geospatial",
+  "tags": [
+    "dbscan",
+    "spatial-clustering",
+    "haversine",
+    "geohash",
+    "gps-clustering"
+  ],
+  "inputs": {
+    "coordinate_pairs": {
+      "type": "array"
+    },
+    "eps_km": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "clustering_run_id": {
+      "type": "string"
+    },
+    "clusters_formed": {
+      "type": "integer"
+    },
+    "highest_density_centroid": {
+      "type": "array"
+    },
+    "cluster_vis_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
